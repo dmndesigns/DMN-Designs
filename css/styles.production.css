@@ -1,0 +1,289 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #000000;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 5px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 5px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 5px;
+}
+
+a {
+  color: #000000;
+}
+
+a:hover {
+    color:#ffc911;
+}
+
+a:active {
+    color: #ffc999;
+}
+
+a:visited {
+    color: #000000;
+}
+
+button {
+    background-color: #ffc911;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: inherit;
+    text-decoration: none;
+    border-color: #ffc911;
+    border-radius: 5px;
+    padding: 10px;
+    display:inline-block;
+}
+
+.button {
+    background-color: #ffc911;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: inherit;
+    text-decoration: none;
+    border-color: #ffc911;
+    border-radius: 5px;
+    padding: 10px;
+    display:inline-block;
+}
+
+.about-button {
+    background-color: #ffc911;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: inherit;
+    text-decoration: none;
+    border-color: #ffc911;
+    border-radius: 5px;
+    padding: 10px;
+    display:inline-block;
+}
+
+button:hover {
+    background-color:#000000;
+    color: #ffc911;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color:#000000;
+    color: #ffc911;
+    cursor: pointer;
+}
+
+th {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.page-header {
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  width: 100%;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-header__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
+}
+
+.DMN-Designs-logo {
+  height: 80px;
+  width: auto;
+}
+
+.page-header__item:last-child {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+a.navigation-list__item {
+    font-family: "Roboto Slab";
+    font-size: 20px;
+    font-weight: 500;
+    color:#000000;
+    text-decoration: none;
+}
+
+a.navigation-list__item:hover {
+    color:#ffc911;
+}
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile__portrait {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+  padding-right: 10px;
+}
+
+.portrait {
+  width: 40%;
+}
+
+.home__table--col2 {
+    text-align: center;
+}
+
+div.About-main {
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.about-list {
+  list-style-type: none;
+  margin: inherit;
+  padding: 0px;
+}
+
+.about-heading, .about-text {
+  margin: inherit;
+}
+
+.about-button {
+  -webkit-transition: background-color 0.8s ease;
+  -o-transition: background-color 0.8s ease;
+  transition: background-color 0.8s ease;
+  background-color: #ffc911;
+  color: #000000;
+}
+.about-button:hover {
+  background-color: #000000;
+  color:#ffc911;
+}
+
+.minneapolis-svg {
+  margin: 10px auto;
+}
+
+.project-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.project-list__item {
+  background-color: #f3f3f3;
+  padding: 10px;
+}
+
+.page-footer {
+  clear:both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .project-list {
+    -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media all and (min-width: 576px) and (max-width: 768px) {
+  .project-list {
+    -ms-grid-columns: 1fr 10px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  a.navigation-list__item {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .DMN-Designs-logo {
+    height: 60px;
+  }
+
+  }
+@media all and (max-width: 576px) {
+.project-list {
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+}
+a.navigation-list__item {
+  font-size: 16px;
+}
+h1 {
+  font-size: 24px;
+}
+.DMN-Designs-logo {
+  height: 60px;
+}
+}

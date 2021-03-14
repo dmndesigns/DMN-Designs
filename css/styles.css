@@ -1,0 +1,225 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #000000;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 5px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 5px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 5px;
+}
+
+a {
+  color: #000000;
+}
+
+a:hover {
+    color:#ffc911;
+}
+
+a:active {
+    color:#044257;
+}
+
+a:visited {
+    color:000000;
+}
+
+button, .button, .about-button {
+    background-color: #ffc911;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: inherit;
+    text-decoration: none;
+    border-color: #ffc911;
+    border-radius: 5px;
+    padding: 10px;
+    display:inline-block;
+}
+
+button:hover, .button:hover {
+    background-color: #000000;
+    color: #ffc911;
+    cursor: pointer;
+}
+
+th {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.page-header {
+  display:flex;
+  width: 100%;
+  padding: 20px;
+  align-items: center;
+}
+
+.page-header__item {
+  flex: 0 1 200px;
+}
+
+.DMN-Designs-logo {
+  height: 80px;
+  width: auto;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+a.navigation-list__item {
+    font-family: "Roboto Slab";
+    font-size: 20px;
+    font-weight: 500;
+    color:#000000;
+    text-decoration: none;
+}
+
+a.navigation-list__item:hover {
+    color:#ffc911;
+}
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+  display:flex;
+  align-items: center;
+}
+
+.profile__portrait {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+  padding-right: 10px;
+}
+
+.portrait {
+  width: 40%;
+}
+
+.home__table--col2 {
+    text-align: center;
+}
+
+div.About-main {
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.about-list {
+  list-style-type: none;
+  margin: inherit;
+  padding: 0px;
+}
+
+.about-heading, .about-text {
+  margin: inherit;
+}
+
+.about-button {
+  transition: background-color 0.8s ease;
+  background-color: #ffc911;
+  color: #000000;
+}
+.about-button:hover {
+  background-color: #000000;
+  color: #ffc911;
+}
+
+.minneapolis-svg {
+  margin: 10px auto;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.project-list__item {
+  background-color: #f3f3f3;
+  padding: 10px;
+}
+
+.page-footer {
+  clear:both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+  .project-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media all and (min-width: 576px) and (max-width: 768px) {
+  .project-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  a.navigation-list__item {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .DMN-Designs-logo {
+    height: 60px;
+  }
+
+  }
+@media all and (max-width: 576px) {
+.project-list {
+  grid-template-columns: 1fr;
+}
+a.navigation-list__item {
+  font-size: 16px;
+}
+h1 {
+  font-size: 24px;
+}
+.DMN-Designs-logo {
+  height: 60px;
+}
+}
