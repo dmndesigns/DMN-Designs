@@ -1,24 +1,24 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
+:root {
+  --primary-color: #ffc911;
+  --secondary-color: #000000;
+  --tertiary-color: #cea520;
+  --light-gray: #f3f3f3;
+  --background-color: #ffffff;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
     margin-left: 10px;
     margin-right: 10px;
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -40,69 +40,37 @@ h3 {
 }
 
 a {
-  color: #000000;
+  color: var(--secondary-color);
 }
 
 a:hover {
-    color:#ffc911;
+    color:var(--primary-color);
 }
 
 a:active {
-    color: #ffc999;
+    color:var(--tertiary-color);
 }
 
 a:visited {
-    color: #000000;
+    color:var(--secondary-color);
 }
 
-button {
-    background-color: #ffc911;
-    color: #000000;
+button, .button, .about-button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: 16px;
     font-weight: 500;
     line-height: inherit;
     text-decoration: none;
-    border-color: #ffc911;
+    border-color: var(--primary-color);
     border-radius: 5px;
     padding: 10px;
     display:inline-block;
 }
 
-.button {
-    background-color: #ffc911;
-    color: #000000;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: inherit;
-    text-decoration: none;
-    border-color: #ffc911;
-    border-radius: 5px;
-    padding: 10px;
-    display:inline-block;
-}
-
-.about-button {
-    background-color: #ffc911;
-    color: #000000;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: inherit;
-    text-decoration: none;
-    border-color: #ffc911;
-    border-radius: 5px;
-    padding: 10px;
-    display:inline-block;
-}
-
-button:hover {
-    background-color:#000000;
-    color: #ffc911;
-    cursor: pointer;
-}
-
-.button:hover {
-    background-color:#000000;
-    color: #ffc911;
+button:hover, .button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     cursor: pointer;
 }
 
@@ -112,20 +80,14 @@ th {
 }
 
 .page-header {
-  display:-webkit-box;
-  display:-ms-flexbox;
   display:flex;
   width: 100%;
   padding: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .page-header__item {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;
+  flex: 0 1 200px;
 }
 
 .DMN-Designs-logo {
@@ -134,13 +96,11 @@ th {
 }
 
 .page-header__item:last-child {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   text-align: right;
 }
 
-.navigation-list {
+ul.navigation-list {
   list-style-type: none;
 }
 
@@ -153,36 +113,29 @@ a.navigation-list__item {
     font-family: "Roboto Slab";
     font-size: 20px;
     font-weight: 500;
-    color:#000000;
+    color:var(--secondary-color);
     text-decoration: none;
 }
 
 a.navigation-list__item:hover {
-    color:#ffc911;
+    color:var(--primary-color);
 }
 
 .profile {
   max-width: 700px;
   margin: 0 auto;
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display:grid;
+  grid-template-columns: 2fr 3fr;
+  grid-gap: 10px;
+  align-items: center;
 }
 
 .profile__portrait {
-  float: left;
-  width: 250px;
-  margin-right: 40px;
+  margin: 20% auto;
   border-radius: 50%;
-  padding-right: 10px;
+  height: 50%;
 }
 
-.portrait {
-  width: 40%;
-}
 
 .home__table--col2 {
     text-align: center;
@@ -205,58 +158,64 @@ div.About-main {
 }
 
 .about-button {
-  -webkit-transition: background-color 0.8s ease;
-  -o-transition: background-color 0.8s ease;
   transition: background-color 0.8s ease;
-  background-color: #ffc911;
-  color: #000000;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 .about-button:hover {
-  background-color: #000000;
-  color:#ffc911;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .minneapolis-svg {
   margin: 10px auto;
+  width: 90%;
+  height: auto;
 }
 
 .project-list {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
   margin-bottom: 20px;
 }
 
 .project-list__item {
-  background-color: #f3f3f3;
+  background-color: var(--light-gray);
   padding: 10px;
 }
 
 .page-footer {
   clear:both;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   text-align: center;
+}
+
+@viewport {
+  width: device-width;
+  zoom: 1.0;
 }
 
 @media all and (min-width: 768px) and (max-width: 992px) {
   .project-list {
-    -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .profile {
+    grid-template-columns: 1fr 2fr;
+    text-align: center;
   }
 }
 
 @media all and (min-width: 576px) and (max-width: 768px) {
   .project-list {
-    -ms-grid-columns: 1fr 10px 1fr;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .profile {
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
   }
 
   a.navigation-list__item {
@@ -274,9 +233,17 @@ div.About-main {
   }
 @media all and (max-width: 576px) {
 .project-list {
-  -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
 }
+.profile {
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+
+.profile__portrait{
+  margin: 5% auto;
+}
+
 a.navigation-list__item {
   font-size: 16px;
 }
